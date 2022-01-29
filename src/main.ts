@@ -59,6 +59,7 @@ async function run() {
     const ramSize = core.getInput('ram-size');
     console.log(`RAM size: ${ramSize}`);
 	
+	// Heap size for AVD
 	const heapSize = core.getInput('heap-size');
 	console.log(`Heap size: ${heapSize}`);
 
@@ -158,6 +159,7 @@ async function run() {
       profile,
       cores,
       ramSize,
+	  heapSize,
       sdcardPathOrSize,
       avdName,
       forceAvdCreation,
